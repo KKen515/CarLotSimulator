@@ -18,11 +18,13 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
+            Console.WriteLine($"Cars Created: {CarLot.numberOfCars}");
 
             Car userCar1 = new Car();
 
             var CarList = new CarLot();
-            
+
+
             
             Console.WriteLine("------------------------");
             Console.WriteLine("Car 1");
@@ -39,7 +41,12 @@ namespace CarLotSimulator
             userCar1.MakeEngineNoise("Vroom");
             userCar1.MakeHonkNoise("Honk");
             
+            Console.WriteLine($"Cars Created: {CarLot.numberOfCars}");
+
+            
             CarList.Cars.Add(userCar1);
+            
+
 
             Console.WriteLine("------------------------");
             Console.WriteLine("Car 2");
@@ -56,6 +63,9 @@ namespace CarLotSimulator
             
                 userCar2.MakeEngineNoise("Stutter");
                 userCar2.MakeHonkNoise("La Cucaracha");
+                
+                Console.WriteLine($"Cars Created: {CarLot.numberOfCars}");
+
                 
                 CarList.Cars.Add(userCar2);
             
@@ -86,6 +96,9 @@ namespace CarLotSimulator
             
             userCar3.MakeEngineNoise("Spud-Spud");
             userCar3.MakeHonkNoise("Beep");
+            
+            Console.WriteLine($"Cars Created: {CarLot.numberOfCars}");
+
             
             //userCar3.Year = 1992;
            // userCar3.Make = "Toyota";

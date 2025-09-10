@@ -34,11 +34,14 @@ public class Car
         Model = model;
         Year = year;
         IsDriveable = isDriveable;
+        CarLot.numberOfCars++;
+
+        
     }
 
     public Car()
     {
-        
+        CarLot.numberOfCars++;
     }
     
 }
